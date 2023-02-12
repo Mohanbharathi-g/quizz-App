@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript Quizz App</title>
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- fontAwesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- start section -->
+    <section class="start" id="start">
+      <button class="btn-start" id="start-btn">start quiz</button>
+    </section>
+    <!-- start section end -->
+
+    <!-- info section start -->
+    <section class="info-section" id="info-section">
+      <div class="top-info">
+        <h1>The rules of the Quiz</h1>
+      </div>
+      <div class="rule-info">
+        <p>1. you will have only 15 seconds per each question</p>
+        <p>2. once you select your answer ,it can't be undone</p>
+        <p>3. you can't select any option once times goes off</p>
+        <p>4. you can't exit from the quiz while you are playing</p>
+        <p>5. you will get the points on the basis of your correct answers</p>
+      </div>
+      <div class="bottom-info">
+        <button class="exit-btn" id="exit-btn">exit quiz</button>
+        <button class="continue-btn" id="continue-btn">continue</button>
+      </div>
+    </section>
+
+    <!-- info section end -->
+    <!-- question start -->
+    <section class="question-section" id="question-section">
+      <div class="header">
+        <h3>some quiz application</h3>
+        <div class="timer">
+          <div class="time-left-txt" id="time-left-txt">time left</div>
+          <div class="timer-sec" id="time-sec">00</div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-sec" id="question-sec">
+          <!--here i insert the tags in javascript  -->
+        </div>
+        <div class="option-sec" id="option-sec"></div>
+      </div>
+      <div class="footer">
+        <div class="question-num">
+          <span id="question-number">1</span> of 10 question
+        </div>
+        <button class="next-que" id="next-que">next que</button>
+      </div>
+    </section>
+
+    <!-- question section end -->
+
+    <section class="result" id="result">
+      <div class="icon"><i class="fa-sharp fa-solid fa-crown"></i></div>
+      <div class="result-para" id="result-para">
+        <span
+          >you have completed this quiz! <br /><span>
+            and sorry you got the only 0 out of 10</span
+          ></span
+        >
+      </div>
+      <div class="button">
+        <button class="replay-btn" id="restart">replay Quiz</button>
+
+        <button class="quit-btn" id="quit-quiz">quit quiz</button>
+      </div>
+    </section>
+
+    <!-- social icons -->
+    <div class="social-icon">
+      <a href="https://instagram.com/mohan__tox?igshid=ZmZhODViOGI="
+        ><i class="fa-brands fa-instagram icons"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/mohanbharathi-g-048664222"
+        ><i class="fa-brands fa-linkedin icons"></i
+      ></a>
+      <a href="https://github.com/Mohanbharathi-g"
+        ><i class="fa-brands fa-github icons"></i
+      ></a>
+    </div>
+    <!-- custom script -->
+    <script src="./scripts/script.js"></script>
+
+    <!-- question script -->
+    <script src="./scripts/questions.js"></script>
+  </body>
+</html>
